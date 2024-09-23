@@ -1,0 +1,45 @@
+.home {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home h1 {
+    color: #000000;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .home p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .home img {
+    width: 300px; 
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+  .navigation-links {
+    margin-top: 20px;
+  }
+  
+  .navigation-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #6d6d6d;
+  }
+  
+  .navigation-links a:hover {
+    text-decoration: underline;
+  }
+  
