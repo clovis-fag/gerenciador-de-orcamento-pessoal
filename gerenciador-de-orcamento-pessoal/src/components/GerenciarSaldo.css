@@ -1,0 +1,49 @@
+.gerenciar-saldo-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gerenciar-saldo-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .saldo-calculo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .receitas-list, .despesas-list {
+    width: 45%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .receitas-list h3, .despesas-list h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .saldo-total {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  

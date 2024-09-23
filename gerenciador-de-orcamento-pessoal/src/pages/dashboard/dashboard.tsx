@@ -4,11 +4,12 @@ import { auth } from '../../service/firebase.ts';
 import { User as FirebaseUser } from 'firebase/auth';
 import Receitas from '../../components/Receitas.tsx';
 import Despesas from '../../components/Despesas.tsx'; 
+import GerenciarSaldo from '../../components/GerenciarSaldo.tsx';
 import './dashboard.css';
 
 const Dashboard = () => {
   const [user, setUser] = useState<FirebaseUser | null>(null);
-  const [view, setView] = useState<'home' | 'receitas' | 'despesas'>('home'); 
+  const [view, setView] = useState<'home' | 'receitas' | 'despesas' | 'saldo'>('home'); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,12 +34,14 @@ const Dashboard = () => {
       <div className="dashboard-actions">
         <button onClick={() => setView('receitas')}>Gerenciar Receitas</button>
         <button onClick={() => setView('despesas')}>Gerenciar Despesas</button>
+        <button onClick={() => setView('saldo')}>Gerenciar Saldo</button>
         <button onClick={() => setView('home')}>Voltar para Início</button>
       </div>
       
       {view === 'home' && <p>Escolha uma opção para gerenciar suas finanças.</p>}
       {view === 'receitas' && <Receitas />}
       {view === 'despesas' && <Despesas />}
+      {view === 'saldo' && <GerenciarSaldo />}
     </div>
   );
 };
